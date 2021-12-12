@@ -402,6 +402,10 @@ th,td {
 }
 
 
+caption span:hover {
+    color: var(--primary);
+}
+
 .table-section h3 {
     color: white;
 }
