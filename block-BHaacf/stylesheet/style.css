@@ -1,0 +1,556 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general styles */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #EA563A;
+   --headings: rgb(35,45,56);
+    --paragraph: rgb(130,130,130);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.font-size {
+    font-size: 0;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+
+/* flex */
+ 
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+.align-items {
+    align-items: flex-start;
+}
+
+.flex-48 {
+    flex: 0 1 48%;
+}
+
+.flex-60 {
+    flex: 0 1 60%;
+}
+
+.flex-28 {
+    flex: 0 1 28%;
+}
+
+
+
+/* width-100% */
+
+.width-100 {
+    width: 100%;
+}
+
+/* btn class */
+
+.btn {
+    color: white;
+    padding: 16px;
+    background: var(--primary);
+    display: inline-block;
+    background: var(--primary);
+    border: 0;
+    outline: 0;
+   transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  opacity: 0.8;
+}
+
+
+.padding-less-btn {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 250;
+}
+
+.font-weight-btn {
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+
+
+
+/* hero header */
+
+video {
+    outline: 0;
+    border: 0; 
+    height: 100vh; 
+    object-fit: cover;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(35,45,56,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.video-div { 
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.hero-header {
+   position: relative;
+   z-index: 2;
+   background: rgba(255,255,255,0.2);
+   padding: 19px 0;
+}
+
+
+
+.brand-name span {
+   color: var(--primary);
+}
+
+.brand-name {
+    font-size: 32px;
+    color: white;
+    font-weight: 900;
+}
+
+.nav-bar-1 a {
+    margin-left: 27px;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-bar-1 .active{
+    color: var(--primary);
+}
+
+.nav-bar-1 a:hover {
+    color: var(--primary);
+}
+
+.nav-bar-1 button {
+    margin-left: 27px;
+}
+
+
+/* hero-section */
+
+.sub-para {
+    color: white;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+.sub-heading {
+    font-size: 80px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 10px 0 20px 0;
+}
+
+/*  choose porogram  */
+ 
+.margin-top {
+    margin-top: 870px;
+    margin-bottom: 70px;
+}
+
+.program-heading h3 {
+    font-size: 30px;
+    color: var(--headings);
+    font-weight: 750;
+}
+
+.program-heading p {
+    color: var(--paragraph);
+    font-size: 16px;
+}
+
+.program-heading .line {
+    margin: 16px 0;
+} 
+
+
+.fitness h4 {
+    font-weight: 700;
+    color: var(--headings);
+}
+
+.basic {
+    margin-left: 20px;
+}
+
+.basic p {
+    font-weight: 300;
+    margin: 4px 0;
+}
+
+.basic a:hover {
+    text-decoration: underline;
+}
+
+.margin {
+    margin-top: 45px;
+}
+
+.blue {
+    color: #037AFB;
+}
+
+/* dont think */
+
+.dont-think h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.dont-think {
+    background: url(../assets/cta-bg.jpg) no-repeat;
+    padding: 100px 0;
+   margin: 160px 0;
+}
+
+.dont-think p {
+    color: white;
+    font-weight: 300;
+    margin: 10px 0 25px 0;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* training class section  */
+
+.training-class {
+    width: 100%;
+    box-shadow: 0 0 8px 4px rgba(103,110,118,0.2);
+    padding: 32px 15px;
+    margin-top: 35px;
+    border-radius: 6px;
+}
+
+.training-class h4 {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary);
+    margin-left: 16px;
+}
+
+.training-class h5:hover {
+    color: var(--primary);
+}
+
+.training-class h5 {
+    color: var(--headings);
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.blog {
+    margin-top: 35px;
+}
+
+.blog h5 {
+    color: var(--headings);
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.blog img {
+    border-radius: 6px;
+}
+
+.blog h5 {
+    margin: 24px 0;
+}
+
+/* table section */
+
+table {
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+
+.table-section {
+    background: url(../assets/schedule-bg.jpg) no-repeat;
+    color: white;
+    border-collapse: collapse;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 150px 0;
+}
+
+.table-section p {
+    color: white;
+}
+
+th,td {
+    border: 1px solid white;
+    padding: 48px;
+}
+
+
+.table-section caption {
+    margin-bottom: 30px;
+}
+
+
+caption span:hover {
+    color: var(--primary);
+}
+
+.table-section h3 {
+    color: white;
+}
+
+
+.table-section .text-align {
+    margin: 40px 0;
+}
+
+
+/* expert trainers */
+
+.cnt-of-trainers {
+   margin: 100px 0;
+}
+
+.trainer-1 {
+    box-shadow: 0 0 8px 4px rgba(103,110,118,0.2);
+    padding: 28px;
+    border-radius: 8px;
+}
+
+.trainer-1 h6 {
+    font-size: 15px;
+    font-weight: 370;
+    margin: 13px 0;
+}
+
+.trainer-1 h5 {
+    color: var(--headings);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.trainer-1 p {
+    margin: 18px 0;
+}
+
+.icon-div {
+    color: var(--headings);
+}
+
+.icon-div i:hover{
+    color: var(--primary);
+}
+
+.icon-div i {
+    margin-right: 11px;
+}
+
+
+/* footer */
+
+fieldset {
+    background: white;
+    border-radius: 6px;
+    width: 640px;
+    padding: 36px;
+    margin: 0 auto;
+   
+}
+
+form .form-control {
+    border: 1px solid #DDDDDD;
+    padding: 8px 6px;
+    margin: 8px 0;
+    width: 100%;
+    outline: 0;
+}
+
+.form-control:hover {
+    border: 1px solid var(--primary);
+}
+
+::placeholder {
+    color: #B8B8B8;
+}
+
+.flex  .one {
+    margin-left: 10px;
+}
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+form {
+    background-image: url(../assets/contact-bg.jpg);
+    padding: 40px;
+    background-position: cover;
+    width: 50%;
+    left: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    top: 0;
+    height: 538px;
+  
+}
+
+
+
+footer {
+    position: relative;
+}
+
+small {
+    font-size: 16px;
+    font-weight: 250;
+
+}
+
+.small {
+    padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
