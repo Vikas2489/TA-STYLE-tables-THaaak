@@ -59,6 +59,10 @@ table {
     --paragraph: rgb(130,130,130);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
